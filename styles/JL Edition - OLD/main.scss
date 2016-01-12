@@ -1,0 +1,422 @@
+/* main.scss */
+
+/**
+ *      TABLE OF STYLES
+ *      ----------------------
+ *      1. SCSS environment
+ *          a. Imports
+ *          b. Variables
+ *          c. Mixins
+ *      2. Normalizing
+ *      3. Global styles
+ *      4. Page structure
+ *      5. Headings
+ *      6. Typography
+ *      7. Navigation
+ *      8. Forms
+ *      9. Extras, fixes, and overrides
+ **/
+
+
+/*******************************
+        1. SCSS environment
+*******************************/
+
+/***** a. Imports *****/
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,400italic,700);
+
+
+/***** b. Variables *****/
+
+/* colours */
+$background_gray: #383634;
+$outlines_gray: #454545;
+$green: #54943e;
+$red: #943e3e;
+
+$font_header_light: #ffffff;
+$font_body_light: #ededed;
+$font_body_dark: #454545;
+
+/* fonts */
+$fonts: 'Roboto', Helvetica, sans-serif;
+$header_fonts: 'Playfair Display', Palatino, serif;
+
+/***** c. Mixins *****/
+
+
+
+/*******************************
+        2. Normalizing
+*******************************/
+
+html,
+body {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/*******************************
+        3. Global styles
+*******************************/
+
+body {
+    font: normal normal 1em/1.3em $fonts;
+    font-weight: 400;
+}
+
+div#container,
+section#mapbox,
+section#find,
+section#list,
+section#detail {
+    display: block;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+
+/*******************************
+        4. Page structure
+*******************************/
+
+div#container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div.wrapper {
+    padding: 0 0 0 3em;
+}
+
+section#mapbox {
+    left: 0;
+    top: 0;
+}
+
+<<<<<<< HEAD
+=======
+div#map {
+    height: 100%;
+    width: 100%;
+}
+
+>>>>>>> master
+section#find,
+section#list,
+section#detail {
+    background: $background_gray;
+<<<<<<< HEAD
+    left: 100%;
+    padding: 0 0 2em;
+    top: 0;
+=======
+    height: 100%;
+    left: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0 0 2em;
+    top: 0;
+    width: 100%;
+>>>>>>> master
+}
+
+section > div > section {
+    margin: 1.5em 0.5em;
+    padding: 0 0.5em;
+}
+
+<<<<<<< HEAD
+=======
+section#find {
+    z-index: 1024;
+}
+
+section#list {
+    z-index: 1025;
+}
+
+section#detail {
+    z-index: 1026;
+}
+
+>>>>>>> master
+section > div > section + section {
+    border-top: 1px dashed $outlines_gray;
+}
+
+/*******************************
+        5. Headings
+*******************************/
+
+header {
+    margin: 0 0 1em;
+}
+
+<<<<<<< HEAD
+=======
+section#mapbox header {
+    background: rgba(255,255,255,0.85);
+    display: block;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    z-index: 512;
+}
+
+>>>>>>> master
+header h1 {
+    color: $font_header_light;
+    font-family: $header_fonts;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+<<<<<<< HEAD
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+=======
+    padding: 0.5em 0.5em 0.5em 0;
+    text-transform: uppercase;
+}
+
+section#mapbox header h1 {
+    color: $font_body_dark;
+    font-size: 2em;
+    padding: 0.5em 1.2em 0;
+}
+
+>>>>>>> master
+header h2 {
+    color: $font_body_light;
+    font-size: 1.3em;
+    line-height: 1;
+}
+
+<<<<<<< HEAD
+=======
+section#mapbox header h3 {
+    color: $font_body_dark;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0 3em 1em;
+}
+
+
+
+
+
+
+>>>>>>> master
+/*******************************
+        6. Typography
+*******************************/
+
+<<<<<<< HEAD
+=======
+dl {
+    margin: 0;
+    padding: 1em;
+    cursor: pointer;
+}
+
+dl + dl {
+    border-top: 1px dashed $outlines_gray;
+}
+
+dd {
+    color: $font_body_light;
+    margin: 0;
+    padding: 0;
+}
+
+>>>>>>> master
+
+/*******************************
+        7. Navigation
+*******************************/
+
+nav {
+<<<<<<< HEAD
+    height: 100%;
+    position: fixed;
+    width: 3em;
+    z-index: 2;
+=======
+    bottom: 3em;
+    position: fixed;
+    width: 3em;
+    z-index: 2048;
+>>>>>>> master
+}
+
+nav a {
+    display: block;
+    height: 2.5em;
+<<<<<<< HEAD
+    margin: -1.25em 0.25em 0;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+=======
+    margin: 1em 0.25em;
+    overflow: hidden;
+>>>>>>> master
+    width: 2.5em;
+}
+
+/* button */
+<<<<<<< HEAD
+=======
+nav.detail,
+nav.find,
+nav.list {
+    left: initial;
+    right: 0;
+}
+
+>>>>>>> master
+nav.map {
+    left: 0;
+    right: initial;
+}
+
+nav a {
+<<<<<<< HEAD
+    background: transparent url('../page/pf_nav_sprite.png') repeat fixed top left;
+    background-size: 5em 5em;
+}
+
+nav.find,
+nav.list,
+nav.detail {
+    left: initial;
+    right: 0;
+}
+
+nav.map a {
+    background-position: top left;
+}
+
+nav.map a:hover {
+    background-position: bottom left;
+}
+
+nav.find a {
+    background-position: top right;
+}
+
+nav.find a:hover {
+    background-position: bottom right;
+=======
+    background-image: url('../page/pf_nav_sprite.png');
+    background-size: 10em;
+    cursor: pointer;
+}
+
+nav a.search {
+    display: none;
+}
+
+nav.detail a {
+    background-position: -7.5em;
+}
+
+nav.find a {
+    background-position: -2.5em;
+}
+
+nav.list a {
+    background-position: -7.5em
+}
+
+nav.map a {
+    background-position: 0em;
+}
+
+nav.detail a.search,
+nav.find a.search,
+nav.list a.search,
+nav.map a.search {
+    background-position: -2.5em;
+>>>>>>> master
+}
+
+
+/*******************************
+        8. Forms
+*******************************/
+
+label {
+    color: $font_body_light;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 0 1em 0.1em 0;
+}
+
+input[type='text'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid $outlines_gray;
+    border-radius: 2px;
+    color: $font_body_dark;
+    font-family: $fonts;
+    font-size: 1.1em;
+    padding: 0.4em;
+}
+
+select {
+    border: none;
+    color: $font_body_dark;
+    font-family: $fonts;
+    font-size: 1em;
+    height: 2em;
+}
+
+div.submit {
+    padding: 2em 1em 0 1em;
+    text-align: right;
+}
+
+input[type='submit'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    border: 0px;
+    font-size: 1.1em;
+    font-weight: 700;
+    left: 0;
+    padding: 0.5em;
+    position: relative;
+    top: 0;
+    border-radius: 2px;
+    background: $green;
+    box-shadow: rgba(0,0,0,0.2) 2px 2px 2px 2px;
+    color: white;
+}
+
+input[type='submit']:hover,
+input[type='submit']:active {
+    box-shadow: none;
+    left: 1px;
+    top: 1px;
+}
+
+/*******************************
+        9. Extras
+*******************************/
+<<<<<<< HEAD
+
+section#find {
+    left: 0;
+}
+=======
+>>>>>>> master

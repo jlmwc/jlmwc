@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #647c80;
+    font-size: 16px;
+    color: white;
+}
+
+.logo {
+    background-image: url(https://secure2.convio.net/rcbdc/custom/graphics/rcd_logo-2x.png);
+    background-size: contain;
+    display: block;
+    width: 100px;
+    height: 122px;
+}
+
+/*Input Styling*/
+select[multiple] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #99bdc3;
+    border-radius: 2px;
+    color: #454545;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 1.1em;
+    padding: 0.4em;
+    width: 16em;
+}
+
+/*Header Styling*/
+header {
+    display: block;
+    overflow: auto;
+}
+header .logo {
+    margin-right: 1em;
+    float: left;
+}
+header h1, header h3 {
+    padding: 0;
+    margin: 0;
+    width: calc(100% - 120px);
+    float: left;
+}
+header h1 {
+    margin-top: 1.25em;
+}
+header h3 {
+    font-size: 1em;
+}
+
+/*Search Panel Styling*/
+.searchPanels {
+    padding: 1.5em;
+    background: rgba(0,0,0, .2);
+}
+
+.module {
+    width: 49%;
+    min-height: 2em;
+    display: inline-block;
+    padding: 1em;
+    border-right: 1px solid white;
+    vertical-align: top;
+}
+.module+.module {
+    border-right: none;
+}
+
+.byMunicipality  select[multiple] {
+    height: 5em;
+}
+
+/*Search Results Table*/
+.results {
+    width: 100%;
+}
+.results td {
+    font-weight: 400;
+    padding: .5em;
+    display: inline-block;
+    width: 49%;
+}
+.results tr {
+    display: block;
+}
+.results tr:nth-child(2n) {
+    background: rgba(0,0,0, .2);
+}
+
+/*Pagination*/
+.pagination {
+    list-style: none;
+}
+.pagination li {
+    display: inline-block;
+}
+.pagination a {
+    display: block;
+    height: 1.5em;
+    width: 1.5em;
+    line-height: 1.5em;
+    background: rgba(0,0,0, .1);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.pagination .first, .pagination .prev, .pagination .next, .pagination .last {
+    background: rgba(0,0,0, .3);
+}
+.pagination .first {
+    border-bottom-left-radius: .5em;
+    border-top-left-radius: .5em;
+}
+.pagination .last {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+}
+.pagination .current {
+    background: rgba(0,0,0, .5)
+}
+
+/*
+Details Page Edit
+*/
+
+button, .button {
+/*    content: 'Edit';*/
+    display: inline-block;
+    float: right;
+    
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 0px;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 700;
+    left: 0;
+    padding: 0.5em;
+    position: relative;
+    top: 0;
+    border-radius: 2px;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px 2px;
+    color: white;
+    -webkit-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;        
+}
+
+button:hover, button:active, .button:hover, .button:active {
+    background: white;
+    box-shadow: none;
+    color: black;
+    left: 1px;
+    top: 1px;
+    -webkit-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+/*
+dl.addresses:before {
+    content: 'Add Address';
+    display: block;
+    margin-bottom: 1em;
+    
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 0px;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 700;
+    left: 0;
+    padding: 0.5em;
+    position: relative;
+    top: 0;
+    border-radius: 2px;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px 2px;
+    color: white;
+    -webkit-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;        
+}
+
+dl.addresses:hover:before, dl.addresses:active:before {
+    background: white;
+    box-shadow: none;
+    color: black;
+    left: 1px;
+    top: 1px;
+    -webkit-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+*/
+
+/*Events Grid*/
+.events  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.events th {
+    font-weight: 700;
+}
+.events td {
+    font-weight: 400;
+}
+.events tr:nth-child(2n) {
+    background: rgba(0,0,0, .2);
+}
+.addEvent {
+    margin-top: 1em;
+}
